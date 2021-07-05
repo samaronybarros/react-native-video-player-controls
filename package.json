@@ -1,0 +1,48 @@
+{
+  "name": "react-native-video-player-controls",
+  "version": "1.0.0",
+  "description": "React Native Video Player Controls",
+  "main": "index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "prepublish": "yarn build",
+    "start": "yarn build && node bin/src/index.js",
+    "start:dev": "nodemon",
+    "build": "rimraf ./bin && tsc --project ./tsconfig.json",
+    "lint": "tsc --noEmit && eslint --ext .js,.jsx,.ts,.tsx ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samaronybarros/react-native-video-player-controls.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-native-video",
+    "video",
+    "player",
+    "video-player"
+  ],
+  "author": "Sam Barros (https://github.com/samaronybarros)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samaronybarros/react-native-video-player-controls/issues"
+  },
+  "homepage": "https://github.com/samaronybarros/react-native-video-player-controls#readme",
+  "dependencies": {
+    "react-native-video": "^5.1.1"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^3.0.0",
+    "eslint": "^7.30.0",
+    "prettier": "^2.3.2",
+    "react": "^17.0.2",
+    "react-native": "^0.64.2",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5"
+  }
+}
