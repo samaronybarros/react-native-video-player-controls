@@ -11,15 +11,15 @@
     "yarn": "^1.22.4"
   },
   "scripts": {
-    "prepare": "yarn build",
-    "prepublish": "yarn build",
-    "postinstall": "yarn build",
     "start": "yarn build && node lib/src/index.js",
     "start:dev": "nodemon",
     "clean": "rimraf lib",
     "build": "yarn clean && tsc",
     "lint": "tsc --noEmit && eslint --ext .js,.jsx,.ts,.tsx ./src",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "yarn build",
+    "prepublish": "yarn build",
+    "postinstall": "yarn build"
   },
   "repository": {
     "type": "git",
