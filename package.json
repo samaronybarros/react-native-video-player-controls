@@ -16,7 +16,8 @@
     "postinstall": "yarn build",
     "start": "yarn build && node lib/src/index.js",
     "start:dev": "nodemon",
-    "build": "rimraf ./lib && tsc",
+    "clean": "rimraf lib",
+    "build": "yarn clean && tsc",
     "lint": "tsc --noEmit && eslint --ext .js,.jsx,.ts,.tsx ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
