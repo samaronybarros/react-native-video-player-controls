@@ -2,7 +2,7 @@
   "name": "react-native-video-player-controls",
   "version": "1.0.0",
   "description": "React Native Video Player Controls",
-  "main": "index.js",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib/**/*"
