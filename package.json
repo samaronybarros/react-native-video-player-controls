@@ -13,7 +13,7 @@
     "postinstall": "yarn build",
     "start": "yarn build && node lib/src/index.js",
     "start:dev": "nodemon",
-    "build": "rimraf ./lib && tsc --build --clean --project ./tsconfig.json",
+    "build": "rimraf ./lib && tsc --outDir ./lib",
     "lint": "tsc --noEmit && eslint --ext .js,.jsx,.ts,.tsx ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
