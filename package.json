@@ -8,6 +8,7 @@
     "lib/**/*"
   ],
   "scripts": {
+    "prepare": "yarn build",
     "prepublish": "yarn build",
     "start": "yarn build && node lib/src/index.js",
     "start:dev": "nodemon",
