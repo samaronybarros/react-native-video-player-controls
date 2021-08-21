@@ -1,9 +1,9 @@
 {
   "name": "react-native-video-player-controls",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "React Native Video Player Controls",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
   "files": [
     "lib/**/*"
   ],
@@ -18,8 +18,7 @@
     "lint": "tsc --noEmit && eslint --ext .js,.jsx,.ts,.tsx ./src",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "yarn build",
-    "prepublish": "yarn build",
-    "postinstall": "yarn build"
+    "prepublish": "yarn && yarn build"
   },
   "repository": {
     "type": "git",
@@ -30,7 +29,8 @@
     "react-native-video",
     "video",
     "player",
-    "video-player"
+    "video-player",
+    "react-native-video-player-controls"
   ],
   "author": "Sam Barros (https://github.com/samaronybarros)",
   "license": "MIT",
