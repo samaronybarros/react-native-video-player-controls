@@ -2,8 +2,8 @@
   "name": "react-native-video-player-controls",
   "version": "1.0.4",
   "description": "React Native Video Player Controls",
-  "main": "src/index.js",
-  "types": "src/index.d.ts",
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
   "files": [
     "lib/**/*"
   ],
@@ -17,7 +17,8 @@
     "build": "yarn clean && tsc",
     "lint": "tsc --noEmit && eslint --ext .js,.jsx,.ts,.tsx ./src",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "yarn && yarn build"
+    "prepublish": "yarn && yarn build",
+    "postinstall": "yarn prepublish"
   },
   "repository": {
     "type": "git",
