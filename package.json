@@ -17,8 +17,7 @@
     "build": "yarn clean && tsc",
     "lint": "tsc --noEmit && eslint --ext .js,.jsx,.ts,.tsx ./src",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "yarn && yarn build",
-    "postinstall": "yarn prepublish"
+    "postinstall": "yarn && yarn build"
   },
   "repository": {
     "type": "git",
