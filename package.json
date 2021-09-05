@@ -28,6 +28,9 @@
     "video-player",
     "react-native-video-player-controls"
   ],
+  "engines": {
+    "yarn": "^1.22.4"
+  },
   "author": "Sam Barros (https://github.com/samaronybarros)",
   "license": "MIT",
   "bugs": {
